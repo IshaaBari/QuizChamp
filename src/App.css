@@ -1,38 +1,112 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}
+
+body {
+
+  background-color: rgb(20, 79, 81);
+}
+
+.main-heading {
+  color: white;
   text-align: center;
+  padding: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.paper-size {
+ /* width: 500px;
+  height: auto; */
+  padding: 20px;
+  margin-inline: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.centralBox {
+   max-width: 50%;
+  /* height: auto; */
+  background-color: white;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.btnbox {
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bnt-txt,
+.optn-list {
+  text-align: center;
+  padding: 10px;
 }
+
+p.optn-list {
+  cursor: pointer;
+ /* width:400px;
+  height: auto; */
+  margin-top: 8px;
+  padding-block: 20px;
+  padding-inline: 5rem;
+
+}
+
+
+ .main_result_box{
+  margin: auto;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+ }
+
+.result-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 350px;
+  height: 200px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  line-height: 50px;
+}
+
+
+@media screen and (min-width: 340px) and (max-width: 850px) {
+  
+
+.paper-size {
+  
+    padding: 5px;
+    margin-inline: 5px;
+  }
+
+    .bnt-txt {
+      padding: 5px;
+    }
+   
+  p.optn-list {
+    
+    margin-top: 8px;
+   padding-block: 10px;
+   padding-inline: 3rem;
+
+  }
+
+  .result-box {
+    font-size: 20px;
+   
+  }
+   
+    
+  }
